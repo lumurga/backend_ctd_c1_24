@@ -1,0 +1,21 @@
+[2024-02-15 21:40:11] [ ERROR] [Animal:49] org.h2.Driver
+[2024-02-15 21:40:11] [ ERROR] [Animal:56] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-15 21:43:26] [ INFO ] [Animal:32] Animal: 1 - Firulais - Perro
+[2024-02-15 21:43:26] [ INFO ] [Animal:32] Animal: 2 - Lola - Vaca
+[2024-02-15 21:43:26] [ INFO ] [Animal:32] Animal: 3 - Homero - Perro
+[2024-02-15 21:43:26] [ INFO ] [Animal:32] Animal: 4 - Pepe - Sapo
+[2024-02-15 21:43:26] [ INFO ] [Animal:32] Animal: 5 - Tuki - Loro
+[2024-02-15 21:43:26] [ INFO ] [Animal:43] Animal: 2 - Lola - Vaca
+[2024-02-15 21:43:26] [ INFO ] [Animal:43] Animal: 3 - Homero - Perro
+[2024-02-15 21:43:26] [ INFO ] [Animal:43] Animal: 4 - Pepe - Sapo
+[2024-02-15 21:43:26] [ INFO ] [Animal:43] Animal: 5 - Tuki - Loro
+[2024-02-15 21:43:58] [ INFO ] [Animal:32] Animal: 1 - Firulais - Perro
+[2024-02-15 21:43:58] [ INFO ] [Animal:32] Animal: 2 - Lola - Vaca
+[2024-02-15 21:43:58] [ INFO ] [Animal:32] Animal: 3 - Homero - Perro
+[2024-02-15 21:43:58] [ INFO ] [Animal:32] Animal: 4 - Pepe - Sapo
+[2024-02-15 21:43:58] [ INFO ] [Animal:32] Animal: 5 - Tuki - Loro
+[2024-02-15 21:43:58] [ INFO ] [Animal:37] ----------------------------------------------------------------
+[2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 2 - Lola - Vaca
+[2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 3 - Homero - Perro
+[2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 4 - Pepe - Sapo
+[2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 5 - Tuki - Loro
