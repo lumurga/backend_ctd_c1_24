@@ -19,3 +19,26 @@
 [2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 3 - Homero - Perro
 [2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 4 - Pepe - Sapo
 [2024-02-15 21:43:58] [ INFO ] [Animal:44] Animal: 5 - Tuki - Loro
+[2024-02-20 14:01:15] [ INFO ] [Animal:32] Animal: 1 - Firulais - Perro
+[2024-02-20 14:01:15] [ INFO ] [Animal:32] Animal: 2 - Lola - Vaca
+[2024-02-20 14:01:15] [ INFO ] [Animal:32] Animal: 3 - Homero - Perro
+[2024-02-20 14:01:15] [ INFO ] [Animal:32] Animal: 4 - Pepe - Sapo
+[2024-02-20 14:01:15] [ INFO ] [Animal:32] Animal: 5 - Tuki - Loro
+[2024-02-20 14:01:15] [ INFO ] [Animal:37] ----------------------------------------------------------------
+[2024-02-20 14:01:15] [ INFO ] [Animal:44] Animal: 2 - Lola - Vaca
+[2024-02-20 14:01:15] [ INFO ] [Animal:44] Animal: 3 - Homero - Perro
+[2024-02-20 14:01:15] [ INFO ] [Animal:44] Animal: 4 - Pepe - Sapo
+[2024-02-20 14:01:15] [ INFO ] [Animal:44] Animal: 5 - Tuki - Loro
+[2024-02-20 14:01:51] [ ERROR] [Animal:50] org.h2.Driver
+[2024-02-20 14:01:51] [ ERROR] [Animal:57] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:03:07] [ ERROR] [Animal:50] null org.h2.Driver
+[2024-02-20 14:03:07] [ ERROR] [Animal:57] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:03:38] [ ERROR] [Animal:50] class java.lang.ClassNotFoundException org.h2.Driver
+[2024-02-20 14:03:38] [ ERROR] [Animal:57] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:03:59] [ ERROR] [Animal:50] class java.lang.ClassNotFoundException: org.h2.Driver
+[2024-02-20 14:03:59] [ ERROR] [Animal:57] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:08:54] [ ERROR] [Animal:50] class java.lang.ClassNotFoundException: org.h2.Driver
+[2024-02-20 14:08:54] [ ERROR] [Animal:58] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:10:12] [ ERROR] [Animal:50] class java.lang.ClassNotFoundException: org.h2.Driver
+[2024-02-20 14:10:12] [ ERROR] [Animal:58] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-02-20 14:10:12] [ INFO ] [Animal:61] Este es un mensaje paraevidenciar que por mas que se genere una excepcion, si esta manejada dentro de bloques try/catch, no interrumpe el flujo de ejecucion de la aplicacion.

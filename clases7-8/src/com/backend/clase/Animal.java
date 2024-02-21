@@ -47,8 +47,9 @@ public class Animal {
 
         } catch (Exception exception){
             exception.printStackTrace();
-            LOGGER.error(exception.getMessage());
+            LOGGER.error(exception.getClass() + ": " + exception.getMessage());
         }
+
 
         finally {
             try{
@@ -57,6 +58,7 @@ public class Animal {
                 LOGGER.error(exception.getMessage());
             }
         }
+        LOGGER.info("Este es un mensaje para evidenciar que por mas que se genere una excepcion, si esta manejada dentro de bloques try/catch, no interrumpe el flujo de ejecucion de la aplicacion.");
 
     }
 

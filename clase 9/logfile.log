@@ -1,0 +1,6 @@
+[2024-02-20 20:40:49] [ ERROR] [Transaccion:74] / by zero
+[2024-02-20 20:40:49] [ ERROR] [Transaccion:79] / by zero
+[2024-02-20 20:41:41] [ INFO ] [Transaccion:67] Cuenta obtenida: nombre = Lu', numeroCuenta = 1234567, saldo = 50025.0
+[2024-02-20 20:47:11] [ INFO ] [Transaccion:53] Cuenta obtenida: nombre = Lu', numeroCuenta = 1234567, saldo = 50010.0
+[2024-02-20 20:47:11] [ ERROR] [Transaccion:80] / by zero
+[2024-02-20 20:47:11] [ ERROR] [Transaccion:85] / by zero
