@@ -1,0 +1,14 @@
+[2024-02-22 20:47:20] [ INFO ] [PacienteDaoMemoria:29] Paciente guardado: Id: 1 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 1 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-02-22 20:47:21] [ ERROR] [DomicilioDaoH2:45] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?, ?, ?, ?) [42104-224]
+[2024-02-22 20:47:21] [ INFO ] [DomicilioDaoH2:50] Tuvimos un problema
+[2024-02-22 20:47:21] [ ERROR] [DomicilioDaoH2:51] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?, ?, ?, ?) [42104-224]
+[2024-02-22 20:47:21] [ ERROR] [PacienteDaoH2:53] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA, DOMICILIO_ID) VALUES (?, ?, ?, ?, ?) [42104-224]
+[2024-02-22 20:47:21] [ INFO ] [PacienteDaoH2:58] Tuvimos un problema
+[2024-02-22 20:47:21] [ ERROR] [PacienteDaoH2:59] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA, DOMICILIO_ID) VALUES (?, ?, ?, ?, ?) [42104-224]
+[2024-02-22 20:48:32] [ INFO ] [PacienteDaoMemoria:29] Paciente guardado: Id: 1 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 1 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-02-22 20:48:34] [ INFO ] [DomicilioDaoH2:42] Se ha registrado el domicilio: Id: 3 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-02-22 20:48:34] [ INFO ] [PacienteDaoH2:48] Se ha registrado el paciente: Id: 3 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 3 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
