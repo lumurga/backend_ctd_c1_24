@@ -1,20 +1,23 @@
-package com.backend.dao.impl;
+package com.backend.clase13.dao.impl;
 
-import com.backend.dao.IDao;
-import com.backend.dbconnection.H2Connection;
-import com.backend.entity.Domicilio;
-import com.backend.entity.Paciente;
-import org.apache.log4j.Logger;
 
+
+import com.backend.clase13.dao.IDao;
+import com.backend.clase13.dbconnection.H2Connection;
+import com.backend.clase13.entity.Domicilio;
+import com.backend.clase13.entity.Paciente;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Component
 public class PacienteDaoH2 implements IDao<Paciente> {
 
-    private Logger LOGGER = Logger.getLogger(PacienteDaoH2.class);
+    private Logger LOGGER = LoggerFactory.getLogger(PacienteDaoH2.class);
     private DomicilioDaoH2 domicilioDaoH2;
 
 

@@ -29,6 +29,11 @@ class PacienteServiceTest {
     }
 
     @Test
+    void deberiaRetornarUnaListaNoVacia_alListarTodosLosPacientesEnH2(){
+        pacienteService = new PacienteService(new PacienteDaoH2());
+        assertFalse(pacienteService.listarPacientes().isEmpty());
+    }
+    @Test
     void deberiaRegistrarUnPacienteYRetornarUnIdEnMemoria(){
         pacienteService = new PacienteService(new PacienteDaoMemoria(new ArrayList<>()));
         Paciente paciente = new Paciente("Nombre", "Apellido", 123456, LocalDate.of(2023, 05, 02), new Domicilio("Calle", 13, "Localidad", "Provincia"));
