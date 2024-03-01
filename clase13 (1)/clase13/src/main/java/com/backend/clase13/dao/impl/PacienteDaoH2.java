@@ -87,7 +87,36 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public Paciente buscarPorId(int id) {
-        return null;
+        Connection connection = null;
+        Paciente paciente = null;
+
+        try{
+            connection = H2Connection.getConnection();
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM PACIENTES WHERE ID = ?");
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                paciente = crearObjetoPaciente(rs);
+            }
+
+            if(paciente == null) LOGGER.error("No se ha encontrado el paciente con id: " + id);
+            else LOGGER.info("Se ha encontrado el paciente: " + paciente);
+
+
+        } catch (Exception e){
+            LOGGER.error(e.getMessage());
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (Exception ex){
+                LOGGER.error("Ha ocurrido un error al intentar cerrar la bdd. " + ex.getMessage());
+                ex.printStackTrace();
+            }
+        }
+
+
+        return paciente;
     }
 
     @Override

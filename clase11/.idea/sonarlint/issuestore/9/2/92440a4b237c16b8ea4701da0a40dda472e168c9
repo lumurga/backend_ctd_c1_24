@@ -1,0 +1,12 @@
+
+H
+java:S1199F"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+^
+java:S2259q"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
+d
+java:S2095!"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Òùå/
+j
+java:S2095`"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(í¶¸Œüÿÿÿÿ
+f	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í¶½×
+s
+java:S1450"]Remove the "domicilioDaoH2" field and declare it as a local variable in the relevant methods.(©åŠÖ
