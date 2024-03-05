@@ -1,10 +1,8 @@
-package com.backend.clase13.service.impl;
+package com.backend.clinicaodontologica.service.impl;
 
-
-
-import com.backend.clase13.dao.IDao;
-import com.backend.clase13.entity.Odontologo;
-import com.backend.clase13.service.IOdontologoService;
+import com.backend.clinicaodontologica.dao.IDao;
+import com.backend.clinicaodontologica.entity.Odontologo;
+import com.backend.clinicaodontologica.service.IOdontologoService;
 
 import java.util.List;
 

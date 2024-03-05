@@ -1,0 +1,38 @@
+
+R
+java:S26294"7Use the built-in formatting to construct this argument.(ÌÂ¥®ùÿÿÿÿ
+R
+java:S2629f"7Use the built-in formatting to construct this argument.(òºÆúûÿÿÿÿ
+M
+java:S2629g"7Use the built-in formatting to construct this argument.(µ¤€
+S
+java:S2629‡"7Use the built-in formatting to construct this argument.(ŞÏÂóûÿÿÿÿ
+H
+java:S1199I"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ
+^
+java:S2259o"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
+_
+java:S2259‘"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
+d
+java:S2095_"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×é‚
+k
+java:S2095€"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(í¶¸Œüÿÿÿÿ
+d
+java:S2095$"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Òùå/
+k	java:S116"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÀ¥úÿÿÿÿ
+s
+java:S1450"]Remove the "domicilioDaoH2" field and declare it as a local variable in the relevant methods.(©åŠÖ
+\
+java:S34574"AFormat specifiers should be used instead of string concatenation.(ÌÂ¥®ùÿÿÿÿ
+\
+java:S3457M"AFormat specifiers should be used instead of string concatenation.(ôıÄ±øÿÿÿÿ
+\
+java:S3457f"AFormat specifiers should be used instead of string concatenation.(òºÆúûÿÿÿÿ
+W
+java:S3457g"AFormat specifiers should be used instead of string concatenation.(µ¤€
+W
+java:S3457q"AFormat specifiers should be used instead of string concatenation.(œ„é’
+]
+java:S3457‡"AFormat specifiers should be used instead of string concatenation.(ŞÏÂóûÿÿÿÿ
+X
+java:S3457“"AFormat specifiers should be used instead of string concatenation.(œ„é’

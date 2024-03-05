@@ -1,0 +1,9 @@
+
+^
+java:S2259 "HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
+g
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®áÑì
+C
+java:S4925"-Remove this "Class.forName()", it is useless.(›‡ªœ
+Q
+java:S6437"6Revoke and change this password, as it is compromised.(Â¼ÔÞýÿÿÿÿ
