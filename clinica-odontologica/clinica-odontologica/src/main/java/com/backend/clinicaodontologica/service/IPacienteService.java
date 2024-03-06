@@ -1,14 +1,16 @@
 package com.backend.clinicaodontologica.service;
 
 
-import com.backend.clinicaodontologica.entity.Paciente;
+import com.backend.clinicaodontologica.dto.entrada.PacienteEntradaDto;
+import com.backend.clinicaodontologica.dto.salida.PacienteSalidaDto;
+
 
 import java.util.List;
 
 public interface IPacienteService {
-    Paciente registrarPaciente(Paciente paciente);
+    PacienteSalidaDto registrarPaciente(PacienteEntradaDto paciente);
 
-    List<Paciente> listarPacientes();
+    List<PacienteSalidaDto> listarPacientes();
 
-    Paciente buscarPacientePorId(int id);
+    PacienteSalidaDto buscarPacientePorId(int id);
 }
