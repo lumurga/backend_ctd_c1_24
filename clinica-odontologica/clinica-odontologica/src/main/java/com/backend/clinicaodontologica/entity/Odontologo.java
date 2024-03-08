@@ -6,6 +6,7 @@ public class Odontologo {
     private String nombre;
     private String apellido;
 
+
     public Odontologo(int id, String matricula, String nombre, String apellido) {
         this.id = id;
         this.matricula = matricula;
@@ -51,8 +52,5 @@ public class Odontologo {
         this.apellido = apellido;
     }
 
-    @Override
-    public String toString() {
-        return "Id: " + id + " - Nombre: " + nombre + " - Apellido: " + apellido + " - Matricula: " + matricula;
-    }
+
 }
