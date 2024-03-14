@@ -9,5 +9,5 @@ public interface IOdontologoService {
 
     List<Odontologo> listarOdontologos();
 
-    Odontologo buscarOdontologoPorId(int id);
+    Odontologo buscarOdontologoPorId(Long id);
 }
