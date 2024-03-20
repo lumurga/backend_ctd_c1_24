@@ -36,7 +36,6 @@ public class Turno {
     }
 
 
-
     public Odontologo getOdontologo() {
         return odontologo;
     }

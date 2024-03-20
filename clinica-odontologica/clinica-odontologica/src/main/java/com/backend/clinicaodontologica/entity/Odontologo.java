@@ -17,7 +17,6 @@ public class Odontologo {
     private String apellido;
 
 
-
     public Odontologo() {
     }
 
