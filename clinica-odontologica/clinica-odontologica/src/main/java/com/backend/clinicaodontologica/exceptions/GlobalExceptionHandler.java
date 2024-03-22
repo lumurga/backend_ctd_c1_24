@@ -1,6 +1,8 @@
 package com.backend.clinicaodontologica.exceptions;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -20,8 +22,22 @@ public class GlobalExceptionHandler {
     }
 
 
+    //manejo global de la BadRequest
 
+    @ExceptionHandler({MethodArgumentNotValidException.class})
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public Map<String, String> manejarValidationException(MethodArgumentNotValidException methodArgumentNotValidException) {
 
+        Map<String, String> mensaje = new HashMap<>();
+
+        methodArgumentNotValidException.getBindingResult().getAllErrors().forEach(e -> {
+            String nombreCampo = ((FieldError) e).getField();
+            String mensajeError = e.getDefaultMessage();
+            mensaje.put(nombreCampo, mensajeError);
+        });
+
+        return mensaje;
+    }
 
 
 
