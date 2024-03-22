@@ -23,6 +23,7 @@ public class TurnoService implements ITurnoService {
 
     private final PacienteService pacienteService;
     private final OdontologoService odontologoService;
+
     public TurnoService(TurnoRepository turnoRepository, ModelMapper modelMapper, PacienteService pacienteService, OdontologoService odontologoService) {
         this.turnoRepository = turnoRepository;
         this.modelMapper = modelMapper;
@@ -32,7 +33,7 @@ public class TurnoService implements ITurnoService {
 
 
     @Override
-    public TurnoSalidaDto registrarTurno(TurnoEntradaDto turnoEntradaDto) throws BadRequestException{
+    public TurnoSalidaDto registrarTurno(TurnoEntradaDto turnoEntradaDto) throws BadRequestException {
         TurnoSalidaDto turnoSalidaDto;
         PacienteSalidaDto paciente = pacienteService.buscarPacientePorId(turnoEntradaDto.getPacienteId());
         OdontologoSalidaDto odontologo = odontologoService.buscarOdontologoPorId(turnoEntradaDto.getOdontologoId());
@@ -41,8 +42,8 @@ public class TurnoService implements ITurnoService {
         String odontologoNoEnBdd = "El odontologo no se encuentra en nuestra base de datos";
         String ambosNulos = "El paciente y el odontologo no se encuentran en nuestra base de datos";
 
-        if(paciente == null || odontologo == null){
-            if(paciente == null && odontologo == null){
+        if (paciente == null || odontologo == null) {
+            if (paciente == null && odontologo == null) {
                 LOGGER.error(ambosNulos);
                 throw new BadRequestException(ambosNulos);
             } else if (paciente == null) {
@@ -62,7 +63,6 @@ public class TurnoService implements ITurnoService {
 
         return turnoSalidaDto;
     }
-
 
 
     @Override
@@ -85,7 +85,7 @@ public class TurnoService implements ITurnoService {
         return null;
     }
 
-    private TurnoSalidaDto entidadADtoSalida(Turno turno, PacienteSalidaDto pacienteSalidaDto, OdontologoSalidaDto odontologoSalidaDto){
+    private TurnoSalidaDto entidadADtoSalida(Turno turno, PacienteSalidaDto pacienteSalidaDto, OdontologoSalidaDto odontologoSalidaDto) {
         TurnoSalidaDto turnoSalidaDto = modelMapper.map(turno, TurnoSalidaDto.class);
         turnoSalidaDto.setPacienteSalidaDto(pacienteSalidaDto);
         turnoSalidaDto.setOdontologoSalidaDto(odontologoSalidaDto);

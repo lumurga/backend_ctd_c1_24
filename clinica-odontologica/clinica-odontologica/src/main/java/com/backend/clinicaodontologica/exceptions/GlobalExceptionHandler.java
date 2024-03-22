@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler({ResourceNotFoundException.class})
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public Map<String, String> manejarResourceNotFound(ResourceNotFoundException resourceNotFoundException){
+    public Map<String, String> manejarResourceNotFound(ResourceNotFoundException resourceNotFoundException) {
         Map<String, String> mensaje = new HashMap<>();
         mensaje.put("mensaje", "Recurso no encontrado: " + resourceNotFoundException.getMessage());
         return mensaje;
@@ -38,7 +38,6 @@ public class GlobalExceptionHandler {
 
         return mensaje;
     }
-
 
 
 }

@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 
 public class OdontologoService implements IOdontologoService {
@@ -53,7 +54,7 @@ public class OdontologoService implements IOdontologoService {
         return odontologos;
     }
 
-    public void eliminarOdontologo(Long id)  {
+    public void eliminarOdontologo(Long id) {
         if (buscarOdontologoPorId(id) != null) {
             odontologoRepository.deleteById(id);
             LOGGER.warn("Se ha eliminado el odontologo con id: {}", id);
@@ -72,7 +73,9 @@ public class OdontologoService implements IOdontologoService {
 
         if (odontologoAActualizar != null) {
 
-            odontologoAActualizar = odontologoRecibido;
+            odontologoAActualizar.setNombre(odontologoRecibido.getNombre());
+            odontologoAActualizar.setApellido(odontologoRecibido.getApellido());
+            odontologoAActualizar.setMatricula(odontologoRecibido.getMatricula());
             odontologoRepository.save(odontologoAActualizar);
 
             odontologoSalidaDto = modelMapper.map(odontologoAActualizar, OdontologoSalidaDto.class);
@@ -87,7 +90,6 @@ public class OdontologoService implements IOdontologoService {
 
         return odontologoSalidaDto;
     }
-
 
 
 }
