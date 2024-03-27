@@ -1,0 +1,1028 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Aplicaion de gestion de clinica odontologica",
+    "version": "1.0",
+    "title": "clinica-odontologica"
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "basic-error-controller",
+      "description": "Basic Error Controller"
+    },
+    {
+      "name": "odontologo-controller",
+      "description": "Odontologo Controller"
+    },
+    {
+      "name": "paciente-controller",
+      "description": "Paciente Controller"
+    },
+    {
+      "name": "turno-controller",
+      "description": "Turno Controller"
+    }
+  ],
+  "paths": {
+    "/error": {
+      "get": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingGET",
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingHEAD",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingDELETE",
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "options": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingOPTIONS",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "basic-error-controller"
+        ],
+        "summary": "errorHtml",
+        "operationId": "errorHtmlUsingPATCH",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "text/html"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ModelAndView"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/odontologos": {
+      "get": {
+        "tags": [
+          "odontologo-controller"
+        ],
+        "summary": "listarOdontologos",
+        "operationId": "listarOdontologosUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/OdontologoSalidaDto"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/odontologos/actualizar/{id}": {
+      "put": {
+        "tags": [
+          "odontologo-controller"
+        ],
+        "summary": "actualizarOdontologo",
+        "operationId": "actualizarOdontologoUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "in": "body",
+            "name": "odontologo",
+            "description": "odontologo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/OdontologoEntradaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OdontologoSalidaDto"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/odontologos/eliminar/{id}": {
+      "delete": {
+        "tags": [
+          "odontologo-controller"
+        ],
+        "summary": "eliminarOdontologo",
+        "operationId": "eliminarOdontologoUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/odontologos/registrar": {
+      "post": {
+        "tags": [
+          "odontologo-controller"
+        ],
+        "summary": "Registro de un nuevo odontólogo",
+        "operationId": "registrarOdontologoUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "odontologo",
+            "description": "odontologo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/OdontologoEntradaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OdontologoSalidaDto"
+            }
+          },
+          "201": {
+            "description": "Odontólogo guardado correctamente",
+            "schema": {
+              "$ref": "#/definitions/OdontologoSalidaDto"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Server error"
+          }
+        }
+      }
+    },
+    "/odontologos/{id}": {
+      "get": {
+        "tags": [
+          "odontologo-controller"
+        ],
+        "summary": "Búsqueda de un odontólogo por Id",
+        "operationId": "obtenerOdontologoPorIdUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Odontólogo obtenido correctamente",
+            "schema": {
+              "$ref": "#/definitions/OdontologoSalidaDto"
+            }
+          },
+          "400": {
+            "description": "Id inválido"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Odontólogo no encontrado"
+          },
+          "500": {
+            "description": "Server error"
+          }
+        }
+      }
+    },
+    "/pacientes": {
+      "get": {
+        "tags": [
+          "paciente-controller"
+        ],
+        "summary": "listarPacientes",
+        "operationId": "listarPacientesUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PacienteSalidaDto"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/pacientes/actualizar/{id}": {
+      "put": {
+        "tags": [
+          "paciente-controller"
+        ],
+        "summary": "actualizarPaciente",
+        "operationId": "actualizarPacienteUsingPUT",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "in": "body",
+            "name": "paciente",
+            "description": "paciente",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PacienteEntradaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PacienteSalidaDto"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/pacientes/eliminar": {
+      "delete": {
+        "tags": [
+          "paciente-controller"
+        ],
+        "summary": "eliminarPaciente",
+        "operationId": "eliminarPacienteUsingDELETE",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/pacientes/registrar": {
+      "post": {
+        "tags": [
+          "paciente-controller"
+        ],
+        "summary": "registrarPaciente",
+        "operationId": "registrarPacienteUsingPOST",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "paciente",
+            "description": "paciente",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PacienteEntradaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PacienteSalidaDto"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/pacientes/{id}": {
+      "get": {
+        "tags": [
+          "paciente-controller"
+        ],
+        "summary": "buscarPacientePorId",
+        "operationId": "buscarPacientePorIdUsingGET",
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PacienteSalidaDto"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/turnos/registrar": {
+      "post": {
+        "tags": [
+          "turno-controller"
+        ],
+        "summary": "registrarPaciente",
+        "operationId": "registrarPacienteUsingPOST_1",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "*/*"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "turnoEntradaDto",
+            "description": "turnoEntradaDto",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TurnoEntradaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/TurnoSalidaDto"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "DomicilioEntradaDto": {
+      "type": "object",
+      "required": [
+        "calle",
+        "localidad",
+        "provincia"
+      ],
+      "properties": {
+        "calle": {
+          "type": "string"
+        },
+        "localidad": {
+          "type": "string"
+        },
+        "numero": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "provincia": {
+          "type": "string"
+        }
+      },
+      "title": "DomicilioEntradaDto"
+    },
+    "DomicilioSalidaDto": {
+      "type": "object",
+      "properties": {
+        "calle": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "localidad": {
+          "type": "string"
+        },
+        "numero": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "provincia": {
+          "type": "string"
+        }
+      },
+      "title": "DomicilioSalidaDto"
+    },
+    "ModelAndView": {
+      "type": "object",
+      "properties": {
+        "empty": {
+          "type": "boolean"
+        },
+        "model": {
+          "type": "object"
+        },
+        "modelMap": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        },
+        "reference": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACCEPTED",
+            "ALREADY_REPORTED",
+            "BAD_GATEWAY",
+            "BAD_REQUEST",
+            "BANDWIDTH_LIMIT_EXCEEDED",
+            "CHECKPOINT",
+            "CONFLICT",
+            "CONTINUE",
+            "CREATED",
+            "DESTINATION_LOCKED",
+            "EXPECTATION_FAILED",
+            "FAILED_DEPENDENCY",
+            "FORBIDDEN",
+            "FOUND",
+            "GATEWAY_TIMEOUT",
+            "GONE",
+            "HTTP_VERSION_NOT_SUPPORTED",
+            "IM_USED",
+            "INSUFFICIENT_SPACE_ON_RESOURCE",
+            "INSUFFICIENT_STORAGE",
+            "INTERNAL_SERVER_ERROR",
+            "I_AM_A_TEAPOT",
+            "LENGTH_REQUIRED",
+            "LOCKED",
+            "LOOP_DETECTED",
+            "METHOD_FAILURE",
+            "METHOD_NOT_ALLOWED",
+            "MOVED_PERMANENTLY",
+            "MOVED_TEMPORARILY",
+            "MULTIPLE_CHOICES",
+            "MULTI_STATUS",
+            "NETWORK_AUTHENTICATION_REQUIRED",
+            "NON_AUTHORITATIVE_INFORMATION",
+            "NOT_ACCEPTABLE",
+            "NOT_EXTENDED",
+            "NOT_FOUND",
+            "NOT_IMPLEMENTED",
+            "NOT_MODIFIED",
+            "NO_CONTENT",
+            "OK",
+            "PARTIAL_CONTENT",
+            "PAYLOAD_TOO_LARGE",
+            "PAYMENT_REQUIRED",
+            "PERMANENT_REDIRECT",
+            "PRECONDITION_FAILED",
+            "PRECONDITION_REQUIRED",
+            "PROCESSING",
+            "PROXY_AUTHENTICATION_REQUIRED",
+            "REQUESTED_RANGE_NOT_SATISFIABLE",
+            "REQUEST_ENTITY_TOO_LARGE",
+            "REQUEST_HEADER_FIELDS_TOO_LARGE",
+            "REQUEST_TIMEOUT",
+            "REQUEST_URI_TOO_LONG",
+            "RESET_CONTENT",
+            "SEE_OTHER",
+            "SERVICE_UNAVAILABLE",
+            "SWITCHING_PROTOCOLS",
+            "TEMPORARY_REDIRECT",
+            "TOO_EARLY",
+            "TOO_MANY_REQUESTS",
+            "UNAUTHORIZED",
+            "UNAVAILABLE_FOR_LEGAL_REASONS",
+            "UNPROCESSABLE_ENTITY",
+            "UNSUPPORTED_MEDIA_TYPE",
+            "UPGRADE_REQUIRED",
+            "URI_TOO_LONG",
+            "USE_PROXY",
+            "VARIANT_ALSO_NEGOTIATES"
+          ]
+        },
+        "view": {
+          "$ref": "#/definitions/View"
+        },
+        "viewName": {
+          "type": "string"
+        }
+      },
+      "title": "ModelAndView"
+    },
+    "OdontologoEntradaDto": {
+      "type": "object",
+      "required": [
+        "apellido",
+        "matricula",
+        "nombre"
+      ],
+      "properties": {
+        "apellido": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "matricula": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 50
+        },
+        "nombre": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        }
+      },
+      "title": "OdontologoEntradaDto"
+    },
+    "OdontologoSalidaDto": {
+      "type": "object",
+      "properties": {
+        "apellido": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "matricula": {
+          "type": "string"
+        },
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "title": "OdontologoSalidaDto"
+    },
+    "PacienteEntradaDto": {
+      "type": "object",
+      "required": [
+        "apellido",
+        "domicilioEntradaDto",
+        "fechaIngreso",
+        "nombre"
+      ],
+      "properties": {
+        "apellido": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 50
+        },
+        "dni": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "domicilioEntradaDto": {
+          "$ref": "#/definitions/DomicilioEntradaDto"
+        },
+        "fechaIngreso": {
+          "type": "string",
+          "example": "yyyy-MM-dd"
+        },
+        "nombre": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 50
+        }
+      },
+      "title": "PacienteEntradaDto"
+    },
+    "PacienteSalidaDto": {
+      "type": "object",
+      "properties": {
+        "apellido": {
+          "type": "string"
+        },
+        "dni": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "domicilioSalidaDto": {
+          "$ref": "#/definitions/DomicilioSalidaDto"
+        },
+        "fechaIngreso": {
+          "type": "string",
+          "format": "date"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "nombre": {
+          "type": "string"
+        }
+      },
+      "title": "PacienteSalidaDto"
+    },
+    "TurnoEntradaDto": {
+      "type": "object",
+      "required": [
+        "fechaYHora",
+        "odontologoId",
+        "pacienteId"
+      ],
+      "properties": {
+        "fechaYHora": {
+          "type": "string",
+          "example": "yyyy-MM-dd HH:mm"
+        },
+        "odontologoId": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "pacienteId": {
+          "type": "integer",
+          "format": "int64"
+        }
+      },
+      "title": "TurnoEntradaDto"
+    },
+    "TurnoSalidaDto": {
+      "type": "object",
+      "properties": {
+        "fechaYHora": {
+          "type": "string",
+          "example": "yyyy-MM-dd HH:mm"
+        },
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "odontologoSalidaDto": {
+          "$ref": "#/definitions/OdontologoSalidaDto"
+        },
+        "pacienteSalidaDto": {
+          "$ref": "#/definitions/PacienteSalidaDto"
+        }
+      },
+      "title": "TurnoSalidaDto"
+    },
+    "View": {
+      "type": "object",
+      "properties": {
+        "contentType": {
+          "type": "string"
+        }
+      },
+      "title": "View"
+    }
+  }
+}
